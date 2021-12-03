@@ -1,14 +1,82 @@
-textarea {
-	width: 80%;
-	height: 10vh;
+@import url("https://fonts.googleapis.com/css2?family=Esteban&display=swap");
+
+:root {
+	--primary-color: #fde68a;
+	--off-white: rgb(248, 241, 241);
+}
+body {
+	font-family: "Esteban", serif;
+	background-color: var(--off-white);
+	margin: 0px;
+}
+.input-output {
 	display: block;
-	margin: 1rem;
+	margin: auto;
+	height: 31.2rem;
+	width: 42%;
+}
+textarea {
+	/* width: ; */
+	height: 17vh;
+	display: block;
 	padding: 1rem;
 }
-#output {
+#btn-translate {
+	background-color: var(--primary-color);
+	border: none;
+	height: 60px;
+	width: 36%;
+	font-size: larger;
+	cursor: pointer;
+}
+#btn-translate:active {
+	background-color: #fcd434;
+	transform: translateY(3px);
+}
+#txt-output {
 	border: 1px solid black;
-	height: 10vh;
-	width: 80%;
-	margin: 1rem;
-	padding: 1rem;
+	height: 17vh;
+	width: 100%;
+}
+.output-description {
+	font-size: large;
+	margin: 1rem 0rem;
+}
+/**container**/
+.container {
+	padding: 0rem 1rem;
+}
+/**navigation**/
+.navigation {
+	font-size: x-large;
+	font-weight: bolder;
+	text-align: center;
+	background-color: var(--primary-color);
+	padding: 0.2rem;
+}
+/**sections**/
+.section {
+	display: block;
+}
+#txt-input {
+	margin: 1rem 0rem;
+	width: 100%;
+	font-size: large;
+}
+
+/**footer**/
+.footer {
+	background-color: var(--primary-color);
+	text-align: center;
+	padding: 0.5rem;
+}
+.footer .footer-body {
+	display: block;
+	width: 40%;
+	text-align: center;
+	margin: 0.3rem auto;
+}
+.footer .footer-header {
+	font-size: larger;
+	font-weight: bold;
 }
